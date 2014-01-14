@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "capistrano-install"
   gem.homepage = "http://github.com/xsunsmile/capistrano-install"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "hsun@motorola.com"
+  gem.summary = %Q{Prepare configurations files for capistrano}
+  gem.description = %Q{A ruby gem to generate capistrano configuration files, reading settings from a YAML configuration file.}
+  gem.email = "xsunsmile@gmail.com"
   gem.authors = ["Hao Sun"]
   # dependencies defined in Gemfile
 end
@@ -32,13 +32,13 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
+require 'simplecov'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+#   test.rcov_opts << '--exclude "gems/*"'
+# end
 
 task :default => :test
 

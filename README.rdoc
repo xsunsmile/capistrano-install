@@ -1,6 +1,6 @@
 = capistrano-install
 
-Description goes here.
+A ruby gem to generate capistrano configuration files, reading settings from a YAML configuration file.
 
 == Contributing to capistrano-install
  
