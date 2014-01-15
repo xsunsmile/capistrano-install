@@ -40,6 +40,13 @@ require 'simplecov'
 #   test.rcov_opts << '--exclude "gems/*"'
 # end
 
+require 'capistrano/all'
+# Load DSL and Setup Up Stages
+require 'capistrano/setup'
+
+# Includes default deployment tasks
+require 'capistrano/deploy'
+
 task :default => :test
 
 require 'rdoc/task'
