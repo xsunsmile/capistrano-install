@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/libgit2/rugged.git
+  revision: 41eed57d60ea383bab4f338a12cd705484be0b83
+  branch: development
+  submodules: true
+  specs:
+    rugged (0.19.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -14,6 +22,12 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
+    capistrano-bundler (1.1.1)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     descendants_tracker (0.0.3)
     docile (1.1.2)
     faraday (0.8.9)
@@ -92,7 +106,10 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0)
   capistrano (~> 3.0.0)
+  capistrano-bundler
+  capistrano-rvm
   jeweler (~> 2.0.0)
   rdoc (~> 3.12)
+  rugged!
   shoulda (~> 3.5.0)
   simplecov (~> 0.8.2)

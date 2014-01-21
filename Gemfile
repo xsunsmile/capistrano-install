@@ -1,6 +1,9 @@
 source "http://rubygems.org"
 
 gem "capistrano", "~> 3.0.0"
+gem "capistrano-bundler"
+gem 'capistrano-rvm'
+gem 'rugged', git: 'git://github.com/libgit2/rugged.git', branch: 'development', submodules: true
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
